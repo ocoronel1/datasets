@@ -15,4 +15,4 @@
       cd pytorch-CycleGAN-and-pix2pix/
 
 ## Running python train.py
-   54  python train.py --dataroot ./datasets/shine2cloudy/ --name shine2cloudy --model cycle_gan --gpu 0,1,2,3  --batch_size 16 --norm instance
+      python train.py --dataroot ./datasets/shine2rain/ --name shine2rain --model cycle_gan --gpu 0,1,2,3  --batch_size 16 --norm instance
