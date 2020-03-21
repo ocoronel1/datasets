@@ -78,26 +78,26 @@ cp ~/app.py
 FLASK_APP=app FLASK_DEBUG=1 flask run --port 5000 --host 0.0.0.0
 
 ### Downloading weather data and distributing it in test and train
-wget https://www.cs.ccu.edu.tw/~wtchu/projects/Weather/Image.zip
-mv Image.zip datasets/
-cd datasets/
-unzip Image.zip 
-cd Image/
-mkdir sunny2cloudy
-mkdir sunny2foggy
-mkdir sunny2rain
-mkdir sunny2snow
-cd sunny2cloudy/
-mkdir testA trainA testB trainB
-cd ..
-cd sunny2foggy/
-mkdir testA trainA testB trainB
-cd ..
-cd sunny2rain/
-mkdir testA testB trainA trainB
-cd ..
-cd sunny2snow/
-mkdir testA testB trainA trainB
+wget https://www.cs.ccu.edu.tw/~wtchu/projects/Weather/Image.zip  
+mv Image.zip datasets/  
+cd datasets/  
+unzip Image.zip   
+cd Image/  
+mkdir sunny2cloudy  
+mkdir sunny2foggy  
+mkdir sunny2rain  
+mkdir sunny2snow  
+cd sunny2cloudy/  
+mkdir testA trainA testB trainB  
+cd ..  
+cd sunny2foggy/  
+mkdir testA trainA testB trainB  
+cd ..  
+cd sunny2rain/  
+mkdir testA testB trainA trainB  
+cd ..  
+cd sunny2snow/  
+mkdir testA testB trainA trainB  
 
 ### Splitting a large number of files into 300 for train and 10 for testing
 cd ..  
