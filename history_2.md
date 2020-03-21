@@ -100,13 +100,13 @@ cd sunny2snow/
 mkdir testA testB trainA trainB
 
 ### Splitting a large number of files into 300 for train and 10 for testing
-cd ..
-cd cloudy/
-for file in $(ls -p | grep -v /| tail -300); do cp $file ../sunny2cloudy/trainB/; done  
-for file in $(ls -p | grep -v /| tail -10); do cp $file ../sunny2cloudy/testB/; donea  
-cd ..
-for file in $(ls -p | grep -v /| tail -300); do cp $file ../sunny2cloudy/trainA/; done  
-for file in $(ls -p | grep -v /| tail -10); do cp $file ../sunny2cloudy/testA/; donea  
+cd ..  
+cd cloudy/  
+for file in $(ls -p | grep -v /| tail -300); do cp $file ../sunny2cloudy/trainB/; done    
+for file in $(ls -p | grep -v /| tail -10); do cp $file ../sunny2cloudy/testB/; donea   
+cd ..  
+for file in $(ls -p | grep -v /| tail -300); do cp $file ../sunny2cloudy/trainA/; done    
+for file in $(ls -p | grep -v /| tail -10); do cp $file ../sunny2cloudy/testA/; donea    
 
 ### Training three models
 python train.py --dataroot ./datasets/sunny2cloudy --model sunny2cloudy --model cycle_gan --gpu_ids 0,1,2,3 --batch_size 16 --norm instance  
