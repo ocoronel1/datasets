@@ -12,7 +12,7 @@ cd datasets/
 
 
 ### Setting up password for github 
-cd ~ 
+cd ~   
 touch .netrc  
 vim .netrc   
 
