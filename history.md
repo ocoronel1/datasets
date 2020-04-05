@@ -1,8 +1,10 @@
 ### Setting the environment
 source activate pytorch_p36  
+cd pytorch-CycleGAN-and-pix2pix/  
+pip install --upgrade pip
 pip install dominate  
-pip install --upgrade pip  
 pip install visdom  
+pip install -r requirements.txt   
 git clone https://github.com/ocoronel1/w210-dataset.git  
 ls w210-dataset/  
 cd pytorch-CycleGAN-and-pix2pix/  
